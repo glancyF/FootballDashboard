@@ -1,0 +1,109 @@
+
+
+[data-testid="stAppViewContainer"] {
+    background-color: #1E0000;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #500805;
+    color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+}
+
+div[data-baseweb="select"] {
+    background-color: #500805;
+    color: #ffffff;
+    border: 1px solid #BC6D4F;
+    border-radius: 8px;
+    box-shadow: 0 0 5px #BC6D4F55;
+    transition: all 0.3s ease;
+}
+
+div[data-baseweb="select"] * {
+    color: #ffffff;
+}
+
+div[data-baseweb="select"] svg {
+    fill: #ffffff;
+}
+
+div[role="listbox"] {
+    background-color: #500805;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px #BC6D4F88;
+}
+
+div[role="option"] {
+    background-color: #500805;
+    color: #ffffff;
+    transition: background-color 0.2s ease;
+}
+
+div[role="option"]:hover {
+    background-color: #A0523C;
+    color: #ffffff;
+}
+
+button {
+    background-color: #BC6D4F;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 0 8px #BC6D4F55;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #A0523C;
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #8B3A2C;
+    transform: scale(0.98);
+}
+
+[data-testid="stAlert"] {
+    background-color: #664500;
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 8px #66450088;
+}
+
+label {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #500805;
+}
+::-webkit-scrollbar-thumb {
+    background: #BC6D4F;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #A0523C;
+}
+[data-testid="stSidebarNav"] > ul > li > a {
+    color: white;
+    background-color: #6c1e1e;
+    border-radius: 10px;
+    margin: 5px 0;
+    transition: background-color 0.2s ease;
+}
+
+[data-testid="stSidebarNav"] > ul > li > a:hover {
+    background-color: #992727;
+}
+[data-testid="stSidebarNav"] > ul > li > a:focus {
+    background-color: #cc3333;
+}
