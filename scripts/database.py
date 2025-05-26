@@ -8,7 +8,7 @@ from scripts.api import get_lineups_for_match
 
 load_dotenv()
 db_path = os.getenv("DB_PATH")
-engine = create_engine(f"sqlite:///{db_path}")
+engine = create_engine(f"sqlite:///{db_path}?charset=utf8")
 metadata = MetaData()
 
 matches = Table(
