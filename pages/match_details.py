@@ -78,7 +78,6 @@ if match_id is not None:
         lineups_raw = selected_match.iloc[0].get("lineups")
         if lineups_raw:
             try:
-                #print(f"Lineups Raw: {lineups_raw}") Debug
                 lineups = json.loads(lineups_raw)
                 st.markdown("### 🧩 Lineups")
                 for team_lineup in lineups:
