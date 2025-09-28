@@ -105,14 +105,11 @@ def insert_matches(match_list):
                 status = match_data['fixture']['status']['short']
 
                 lineups = get_lineups_for_match(match_id)
-                #print(f"[LINEUPS] Match {match_id}: lineups = {lineups}") Debug
-
                 existing_match = conn.execute(
                     matches.select().where(matches.c.id == match_id)
                 ).fetchone()
 
                 if existing_match is None:
-                    #print(f"[MATCHES] Inserting match {match_id}") debug
                     conn.execute(matches.insert().values(
                         id=match_id,
                         date=match['date'],
